@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Keeone Hoon - Memecoin Website
 
-## Getting Started
+A high-end, production-ready, fully responsive single-page website for the Keeone Hoon memecoin, built with Next.js 14, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
+
+- **Comic Book Style Design** - Unique visual style with halftone patterns, speech bubbles, and comic rays
+- **Fully Responsive** - Optimized for mobile, tablet, and desktop
+- **Smooth Animations** - Floating elements, twinkling stars, and subtle hover effects
+- **Production Ready** - SEO optimized, fast loading, and Vercel-ready
+- **Modern Tech Stack** - Next.js 14, TypeScript, Tailwind CSS
+
+## 📦 Getting Started
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Start Production Server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🖼️ Images to Replace
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project includes placeholder SVG images. Replace these with your actual images in `/public/images/`:
 
-## Deploy on Vercel
+| File | Description |
+|------|-------------|
+| `logo.png` | Main Keeone Hoon logo |
+| `avatar.png` | Small avatar for header |
+| `character-hero.png` | Main character in hero section |
+| `cityscape.png` | City skyline background |
+| `cloud.svg` | Cloud decoration (can keep as SVG) |
+| `character-about.png` | Character for About section |
+| `keone-real.png` | Real photo of Keone Hon |
+| `phone-content.png` | Content for phone mockup |
+| `character-sitting.png` | Sitting character for How to Buy |
+| `character-excited.png` | Excited character for Final Thoughts |
+| `character-laptop.png` | Character with laptop for Stay Updated |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Colors
+Edit the CSS variables in `src/app/globals.css`:
+
+```css
+:root {
+  --primary-purple: #7c3aed;
+  --primary-purple-light: #a78bfa;
+  --primary-purple-dark: #5b21b6;
+  --bg-purple-light: #c4b5fd;
+  --accent-orange: #f97316;
+  --accent-yellow: #fbbf24;
+}
+```
+
+### Social Links
+Update Telegram and X (Twitter) links in:
+- `src/components/Header.tsx`
+- `src/components/Footer.tsx`
+
+### Content
+Edit text content in each component file in `src/components/`.
+
+## 🚀 Deploy on Vercel
+
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with one click
+
+Or use the Vercel CLI:
+
+```bash
+npx vercel
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles & animations
+│   ├── layout.tsx       # Root layout with fonts & meta
+│   └── page.tsx         # Main page composition
+├── components/
+│   ├── Header.tsx       # Fixed navigation header
+│   ├── Hero.tsx         # Hero section with rays & character
+│   ├── AboutToken.tsx   # About the token section
+│   ├── WhyChoose.tsx    # Features grid section
+│   ├── HowToBuy.tsx     # How to buy steps
+│   ├── FinalThoughts.tsx # Final thoughts section
+│   ├── StayUpdated.tsx  # Stay updated CTA
+│   └── Footer.tsx       # Footer with disclaimer
+public/
+└── images/              # All image assets
+```
+
+## 📄 License
+
+Copyright © 2025 Keeone Hoon. All Rights Reserved.
